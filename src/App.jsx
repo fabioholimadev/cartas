@@ -350,8 +350,8 @@ const ProposalLetter = () => {
               <h1 className="font-['Dancing_Script'] text-6xl md:text-7xl mb-8 mt-4 leading-[1.1] font-bold" style={{ color: colors.sealRed, textShadow: '2px 2px 4px rgba(0,0,0,0.1)' }}>
                 Você quer namorar comigo?
               </h1>
-              <p className="font-serif mb-12 text-lg md:text-xl px-2 font-medium" style={{ color: colors.textSepia }}>
-                (Insira aqui a sua declaração final. Descreva como essa viagem até aqui foi incrível e como você mal pode esperar pelas próximas aventuras.)
+              <p className="font-serif mb-12 text-lg md:text-xl px-2 font-small" style={{ color: colors.textSepia }}>
+                Eu queria poder dizer tudo isso pessoalmente, mas como estou viajando, decidi trazer o tema das grandes navegações para este site. Como naquelas histórias de contos de fadas, onde cartas atravessavam oceanos carregando os sentimentos mais profundos, envio-lhe agora o meu. Você gostaria de me acompanhar e vivermos um "felizes para sempre", minha bela princesa?
               </p>
               <div className="flex flex-col gap-5 px-2 md:px-8">
                 <motion.a
@@ -394,22 +394,22 @@ export default function App() {
     {
       question: "O Primeiro Porto...",
       title: "Onde tudo começou",
-      text: "Lembra daquele primeiro dia? Eu confesso que estava nervoso(a). O clima estava perfeito, e assim que nossos olhares se cruzaram, eu soube que ali havia começado uma viagem muito especial."
+      text: "O nosso primeiro contato real foi na acolhida, onde falamos sobre coisas básicas, mas foi nesse contato que eu descobri que você era incrível, você já sabia tudo que você precisa fazer, além de você ser muito linda apresentando, eu estava sentado na mesma fileira, mas estava distante, depois eu comecei a falar com você, foi muito bom, eu lembro que a gente ficou rindo das regras da escola, porque elas nunca eram seguidas."
     },
     {
       question: "Navegando juntos...",
       title: "Um mar de momentos",
-      text: "Tivemos tantas aventuras incríveis, mas aquele dia em que [insira uma situação] ficou marcado como um farol. Ali eu percebi que sua companhia era tudo o que eu precisava."
+      text: "Depois que nos conhecemos, nossas conversas começaram a fluir. No início, eram apenas mensagens no grupo, mas logo passamos para o contato pessoal. Conversamos durante madrugadas, apoiei você enquanto estava no hospital, rimos de fofocas e jogamos conversa fora. Foi assim, aos poucos, que você foi me conquistando. Eu ria muito das suas piadas e as conversas eram tão boas que eu nunca queria que acabassem."
     },
     {
       question: "A minha bússola...",
       title: "O que me encanta",
-      text: "Eu amo o jeito que você sorri, a forma como consegue transformar mares agitados em calmaria, e como me faz sentir seguro(a) quando estamos juntos."
+      text: " Depois disso, sem perceber, fiquei viciado em você: no seu sorriso, nas suas piadas, nas suas histórias, na sua voz e na forma como você vê o mundo. Cada vez que conversávamos, vinha um pensamento à minha mente: 'Essa é a mulher que eu preciso'. Comecei a ir mais à escola só para ter uma chance de te ver. Hoje, cada vez que penso em você, um sorriso surge na hora. Fico perdido na sua beleza e inteligência; sinto-me um espectador da sua beleza. É simplesmente maravilhoso."
     },
     {
       question: "Olhando o horizonte...",
       title: "Nossos planos",
-      text: "Olhando para trás no mapa, vejo o quanto avançamos. Mas o que mais me anima é olhar para o oceano à frente. Descobrir novos mundos com você é meu passatempo favorito."
+      text: "Lembro-me do dia em que disse que só queria namorar aos 28 anos. Você sugeriu, brincando, que seria melhor eu me tornar padre! Mas eu dizia aquilo porque acreditava que só encontraria a minha mulher ideal por volta dessa idade; que, até lá, seguiria a vida sem experimentar o amor. Mas, então, surge você: a pessoa ideal. Linda, inteligente, engraçada e obstinada. Alguém madura, que pensa no futuro e não apenas no agora. A mulher perfeita para a minha vida."
     }
   ];
 
