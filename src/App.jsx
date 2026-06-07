@@ -15,14 +15,16 @@ const colors = {
 
 // --- ÁUDIO ---
 const playSound = (soundType) => {
-  try {
-    // Procura os arquivos na pasta 'public'
-    const audio = new Audio(soundType === 'paper' ? '/paper.mp3' : '/magic.mp3');
-    audio.volume = 0.5;
-    audio.play().catch(() => console.log("Áudio aguardando interação."));
-  } catch (error) {
-    console.log("Erro de áudio", error);
-  }
+  const audio = new Audio(`/${soundType}.mp3`);
+  
+  // Tenta tocar com um tratamento de erro mais robusto
+  audio.play().then(() => {
+    console.log("Som reproduzido com sucesso!");
+  }).catch((e) => {
+    console.log("Falha ao tocar som, tentando novamente...", e);
+    // Tenta uma segunda vez caso o navegador tenha bloqueado inicialmente
+    setTimeout(() => audio.play().catch(() => {}), 100);
+  });
 };
 
 // --- ANIMAÇÕES GLOBAIS ---
@@ -379,6 +381,15 @@ const ProposalLetter = () => {
 
 // --- COMPONENTE PRINCIPAL (APP) ---
 export default function App() {
+  // Adicione isso no topo do componente App:
+  useEffect(() => {
+    const audioPaper = new Audio('/paper.mp3');
+    const audioMagic = new Audio('/magic.mp3');
+    
+    // Isso força o navegador a buscar o arquivo no servidor imediatamente
+    audioPaper.load();
+    audioMagic.load();
+  }, []);
   const memories = [
     {
       question: "O Primeiro Porto...",
